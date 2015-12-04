@@ -1,0 +1,422 @@
+.image {
+    width: 120px;
+}
+.image-full {
+    background-color: #FFFFFF;
+}
+
+/*GLOBAL STYLE*/
+
+/** {color:#AD33AD;} This is a global selector*/
+
+html, body {
+    height:100%;
+}
+
+body {
+    margin:0px;
+    padding:0px;
+    background-color:#FFFFFF;
+    font-family:'Source Sans Pro', Helvetica, sans-serif;
+    font-size:16px;
+    font-weight:500;
+    color:#000000;
+}
+
+@media screen and (max-width: 600px) {
+    body {background-color:#000000;}
+    h1 {color:#0000FFfont-size}
+}
+
+h1, h2, h3 {
+    color:#AD5CFF;
+    margin:0px;
+    padding:0px;
+}
+/*Light purple heading color*/
+
+h1 {
+    font-size:3em;
+}
+p {
+    margin:15px 0px;
+    line-height:20px;
+}
+b, strong {
+    color:#AD5CFF;
+}
+a {
+    color:#FF7900;
+    text-decoration:none
+}
+
+a:hover {
+    color:#FF0000;
+    text-decoration:underline;
+}
+
+figure {
+    margin:0px;
+    padding:0px;
+}
+
+hr {
+    margin: 25px 0px;
+}
+
+/*Header*/
+
+header {
+    background-color:#F1F1F1;
+}
+
+#header {
+    padding:15px 0px;
+    position:relative;
+}
+
+#logo {
+    padding:15px;
+    text-decoration:none;
+}
+
+logo:hover {
+    color:#AD5CFF;
+    text-decoration:none;
+}
+
+#title a:hover {
+    color:#FF7900;
+}
+
+/*Navigation*/
+
+#menu {
+    position:absolute;
+    top:10px;
+    right:3%;
+}
+
+#menu ul {
+    display:inline;
+    
+}
+
+#menu li {
+    display:inline;
+    margin:0px 10px;
+    font-weight:600;
+    text-transform:none;
+    text-align:center;
+}
+#menu li a:hover {
+    text-decoration:none;
+    color:#FF7900;
+    
+}
+
+#menu li:after {
+    content:"|";
+    padding:16px 20px;
+    color:rgb(173, 92, 255);
+}
+
+.currentPage a {
+    color:#AD5CFF;
+    text-decoration:none;
+}
+
+/*Banner Styles*/
+
+#bannerHome {
+    border-top:3px solid #AD5CFF;
+    border-bottom:3px solid #AD5CFF;
+    padding:45px 0px;
+    background:url(../images/map.jpg) no-repeat center center #F1F1F1;
+    background-size:cover;
+    overflow:hidden;
+    
+}
+
+#bannerAbout {
+    border-top:3px solid #AD5CFF;
+    padding:90px 0px;
+    background:url(../images/banner-about.jpg) no-repeat center center #000000;
+    background-size:cover;
+    overflow:hidden;
+}
+
+#bannerTitle {
+    text-align:center;
+    color:#AD5CFF;
+    font-size:3em;
+    text-shadow:4px 4px #000000;
+}
+
+#bannerButton {
+    width:120px;
+    margin:0px auto;
+    
+}
+
+#bannerContact {
+    border-top:3px solid #AD5CFF;
+    border-bottom:3px solid #AD5CFF;
+    padding:45px 0px;
+    background:url(../images/map.jpg) no-repeat center center #F1F1F1;
+    background-size:cover;
+    overflow:hidden;
+    
+}
+
+.mainWidth {
+    width:1200px;
+    margin:0px auto;
+    background-color:#F1F1F1;
+}
+
+.columnA, .columnB, .columnC {
+    width:384px;
+    margin-left:8px;
+    margin-right:8px;
+    float:left;
+}
+
+/*The margin should be enough to seperate the columns perfectly, but we will float them just in case.*/
+
+/*.columnA, .columnB {*/
+/*    float:left;*/
+/*    margin:0px 6px;*/
+/*}*/
+
+/*.columnC {*/
+/*    float:right;*/
+/*    margin:0px 6px;*/
+    
+/*}*/
+
+.columnA h2, .columnB h2, .columnC h2 {
+    color:#FF7900;
+    font-size:28px;
+    font-weight:600;
+    text-transform:none;
+    text-align:center;
+    
+}
+
+/*.likeImage {*/
+/*    width:384px;*/
+/*    height:225px;*/
+/*}*/
+
+/*Temporary until we have an image in its place*/
+
+.likeImage span  {
+    display:block;
+    color:#000000;
+    text-align:center;
+    font-weight:700;
+    font-size:20px;
+    text-transform:none;
+    padding:10px 0px;
+}
+
+.columnA p, .columnB p, .columnC p {
+    text-align:justify;
+    padding:0px;
+}
+
+/*Button styles here*/
+
+a.button, .button {
+  background-color: #E3E3DE;
+  padding: 5px 10px;
+  color: #404040;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 75%;
+  margin: 2px;
+  font-family: 'Museo Sans Rounded' sans-serif;
+  border: 4px solid #a043ff;
+  float:left;
+}
+
+a.button:hover, .button:hover {
+    color:#FFFFFF;
+    text-decoration:none;
+    background-color:#ba76ff;
+}
+
+/*About Me Section*/
+
+.alignLeft {
+  float:left;
+  width:384px;
+  margin-right:24px;
+}
+
+.alignRight {
+    float:right;
+    width:792px;
+    text-align:justify;
+}
+
+#main {
+    margin-bottom:25px;
+}
+
+/*Footer Section*/
+
+footer {
+    clear:both;
+    margin-top:1080px;
+    
+}
+
+.copyright {
+    overflow:hidden;
+    padding:30px 0px;
+    border-top:3px solid #AD5CFF;
+    background-color:#F1F1F1;
+    display:block;
+}
+
+footer p {
+    text-align:center;
+    font-size:18px;
+}
+
+.social {
+    text-align:center;
+}
+
+footer p a {
+    color:#FF7900;
+}
+
+footer p a:hover {
+    color:#AD5CFF;
+    text-decoration:none;
+}
+
+/*Typing Styles*/
+
+#myData {
+    margin:auto;
+    width:900px;
+}
+
+#myHeader {
+    background-color:#AD5CFF;
+    color:#FFFFFF;
+    font-size:1.3em;
+    padding:5px 0px;
+    text-shadow:2px 1px #000000;
+}
+
+#groupData {
+    margin:auto;
+    width:900px;
+}
+
+#groupHeader {
+    background-color:#FF7900;
+    color:#FFFFFF;
+    font-size:1.3em;
+    padding:5px 0px;
+    text-shadow:2px 1px #000000;
+}
+
+.lightColor {
+    background-color:#D7D7D7;
+}
+
+tfoot > tr {
+    background-color:#AEFF5C;
+    text-align:center;
+}
+
+tfoot td {
+    font-size:1.5em;
+    border-radius:5px;
+    
+}
+
+/*Extra Styles*/
+
+.fa {
+    border:3px solid #FFFFFF;
+    font-size:24px  !important;
+    margin:15px;
+    color:#FFFFFF;
+    height:28px;
+    width:28px;
+    padding:10px;
+    border-radius:100%;
+    
+}
+
+.fa:hover {
+    background-color:#0C516E;
+}
+
+.fa-linkedin {
+    background-color:#0077B5;
+}
+
+.asterisk {
+    color:#FF0000;
+    font-weight:900;
+}
+
+form {
+    background-color:#F1F1F1;
+    border-radius:20px;
+    margin:0px 20px;
+    
+}
+
+legend {
+    background-color:#FFFFFF
+}
+
+input, textarea {
+    border-radius:10px;
+    border:2px solid #F1F1F1 ;
+    box-shadow:1px 1px inset;
+    color:#000000;
+    display:block;
+    width:200px;
+}
+
+textarea {
+    height:200px;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-color:#B3D9FF;
+    }
+    .columnA, .columnB, .columnC {
+        width:auto;
+        margin:1% auto;
+    }
+    
+    .mainwidth {
+        width:100%;
+        margin:20px auto;
+}
+
+    h1 {
+        font-size:2.5em;
+    }
+    
+    h2 {
+        font-size:2em;
+    }
+    
+    article p {
+        font-size:1em;
+    }
+}
