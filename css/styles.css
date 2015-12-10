@@ -1,6 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Courgette);
+
 .image {
     width: 120px;
 }
+
 .image-full {
     background-color: #FFFFFF;
 }
@@ -17,15 +20,10 @@ body {
     margin:0px;
     padding:0px;
     background-color:#FFFFFF;
-    font-family:'Source Sans Pro', Helvetica, sans-serif;
+    font-family: 'Courgette', cursive;
     font-size:16px;
     font-weight:500;
     color:#000000;
-}
-
-@media screen and (max-width: 600px) {
-    body {background-color:#000000;}
-    h1 {color:#0000FFfont-size}
 }
 
 h1, h2, h3 {
@@ -38,6 +36,7 @@ h1, h2, h3 {
 h1 {
     font-size:3em;
 }
+
 p {
     margin:15px 0px;
     line-height:20px;
@@ -118,7 +117,7 @@ logo:hover {
 #menu li:after {
     content:"|";
     padding:16px 20px;
-    color:rgb(173, 92, 255);
+    color:#AD5CFF;
 }
 
 .currentPage a {
@@ -350,8 +349,8 @@ tfoot td {
     font-size:24px  !important;
     margin:15px;
     color:#FFFFFF;
-    height:28px;
-    width:28px;
+    height:58px;
+    width:58px;
     padding:10px;
     border-radius:100%;
     
@@ -395,28 +394,36 @@ textarea {
 }
 
 @media screen and (max-width: 1024px) {
-    body {
-        background-color:#B3D9FF;
-    }
-    .columnA, .columnB, .columnC {
+    .mainWidth {
+        display:block;
+        float:none;
         width:auto;
-        margin:1% auto;
+        margin:0px auto;
+    }
+    mainBody {
+        background-color:#F1F1F1;
+    }
+    .alignLeft {
+        clear:none;
+        float:none;
     }
     
-    .mainwidth {
-        width:100%;
-        margin:20px auto;
-}
-
-    h1 {
-        font-size:2.5em;
+    .alignRight {
+        float:none; 
+        width:86%; 
+        margin:5% auto;
+        clear:none;
     }
     
-    h2 {
-        font-size:2em;
-    }
-    
-    article p {
+    .columnA, .columnB, .columnC {
         font-size:1em;
+        text-align:center;
+        width:69%;
+        margin:auto;
+        float:none;
+        display:block;
+        clear:both;
     }
+    
+
 }

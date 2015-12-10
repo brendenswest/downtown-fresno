@@ -52,7 +52,7 @@ body {
     }
     #box1, #box2, #box3 {
         width:auto;
-        margin:1% auto;
+        margin:0px auto 20px auto;
     }
     
     #box3 {
@@ -70,6 +70,10 @@ body {
     
     h4 {
         font-size:1.75em;
+    }
+    
+    p {
+        font-size:1.25em;
     }
     
 }
