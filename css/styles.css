@@ -50,8 +50,7 @@ a {
 }
 
 a:hover {
-    color:#FF0000;
-    text-decoration:underline;
+    
 }
 
 figure {
@@ -110,7 +109,6 @@ logo:hover {
 }
 #menu li a:hover {
     text-decoration:none;
-    color:#FF7900;
     
 }
 
@@ -426,4 +424,32 @@ textarea {
     }
     
 
+}
+
+/*Photo Gallery Styles*/
+
+/*figure {*/
+/*    width:300px*/
+/*    margin:5px auto;*/
+/*}*/
+
+figure img {
+    display:block;
+    margin:5px auto;
+}
+
+
+.caption {
+    text-align:center;
+    margin:5px;
+    /*text-align:justify;*/
+}
+
+.galleryImage {
+    background-color:#AD5CFF;
+    padding:5px;
+    border:2px solid #FF7900;
+    width:325px;
+    float:left;
+    margin:5px;
 }
